@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function fetchRepositories(username) {
         const apiUrl = `https://api.github.com/users/${username}/repos?page=${currentPage}&per_page=${repositoriesPerPage}`;
 
-        const accessToken = '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';
+        const accessToken = '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';
     
         fetch(apiUrl, {
             headers: {
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const apiUrl = `https://api.github.com/users/${username}`;
         
 
-        const accessToken = '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';
+        const accessToken = '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';
 
         fetch(apiUrl, {
             headers: {
