@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>GitHub Repository Showcase</title>
+</head>
+<body>
+    <header>
+        <h1>GitHub Repository Showcase</h1>
+        <div id="repository-form">
+            <label for="username">GitHub Profile URL:</label>
+            <input type="text" id="username" placeholder="Enter GitHub profile URL">
+            <label for="repositories-count">Repositories per page:</label>
+            <select id="repositories-count">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+                <option value="70">70</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+                <option value="100">100</option>
+            </select>
+            <button id="fetch-button" type="button" class="btn btn-success">Fetch Repositories</button>
+            
+        </div>
+    </header>
+
+    
+
+    <div id="profile-section">
+        <div id="profile-image-container">
+            <img id="profile-image" src="" alt="Profile Image">
+        </div>
+        <div id="profile-details">
+            <h2 id="profile-name"></h2>
+            <p id="profile-bio"></p>
+            <p id="location"></p>
+            <p id="twitter"></p>
+        </div>
+    </div>
+   
+    <section id="repositories">
+
+    </section>
+
+    <div id="pagination">
+        
+        <button class="btn_center1" id="prev-button" disabled>&larr; Previous</button>
+        <span class="middle" id="page-info">Page 1</span>
+    
+        <button class="btn_center2" id="next-button" disabled>Next &rarr;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
