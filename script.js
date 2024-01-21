@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     const repositoriesContainer = document.getElementById('repositories');
     const usernameInput = document.getElementById('username');
@@ -68,13 +69,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function fetchRepositories(username) {
         const apiUrl = `https://api.github.com/users/${username}/repos?page=${currentPage}&per_page=${repositoriesPerPage}`;
 
-        const accessToken = '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';
-    
-        fetch(apiUrl, {
-            headers: {
-                'Authorization': `Bearer ${accessToken}`
-            }
-        })
+      
+        fetch(apiUrl)
         .then(response => {
 
             if (!response.ok) {
@@ -117,14 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function fetchUserData(username) {
         const apiUrl = `https://api.github.com/users/${username}`;
         
-
-        const accessToken = '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';
-
-        fetch(apiUrl, {
-            headers: {
-                'Authorization': `Bearer ${accessToken}`
-            }
-        })
+        fetch(apiUrl)
         .then(response => response.json())
         .then(userData => {
             updateProfile(userData);
