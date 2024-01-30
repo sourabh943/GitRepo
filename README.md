@@ -4,7 +4,7 @@ Welcome to the GitHub Profile Viewer repository! This application allows users t
 ### Screenshots
 <img src="screenshot/Screenshot 2024-01-30 171432.png">
 
-<img src="screenshot/2024-01-30 171700.png">
+<img src="screenshot/Screenshot 2024-01-30 171700.png">
 ### Features
 - Fetch GitHub user information by entering the username.
 - Display the user's profile picture, bio, and location.
